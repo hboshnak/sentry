@@ -23,6 +23,7 @@ export default class ApiForm extends Form<Props> {
 
   static propTypes = {
     ...Form.propTypes,
+    getEnabledData: PropTypes.func,
     onSubmit: PropTypes.func,
     apiMethod: PropTypes.string.isRequired,
     apiEndpoint: PropTypes.string.isRequired,
@@ -40,6 +41,33 @@ export default class ApiForm extends Form<Props> {
     this.api.clear();
   }
 
+  getEnabledData() {
+    // Return a hash of data from non-disabled fields.
+
+    // Start with this.state.data and remove rather than starting from scratch
+    // and adding, because a) this.state.data is our source of truth, and b)
+    // we'd have to do more work to loop over the state.data Object and lookup
+    // against the props.children Array (looping over the Array and looking up
+    // in the Object is more natural). Maybe the consequent use of delete
+    // carries a slight performance hit. Why is yer form so big? 🤔
+
+    const data = {...this.state.data}; // Copy to avoid mutating state.data itself.
+    if (Array.isArray(this.props.children)) {
+      let child: any;
+      for (child of this.props.children) {
+        if (!/Field$/.test(child.type?.name || '')) {
+          // Bit of a hack to have to use a RegExp on type name to filter
+          // children down to *Field elements, but here we are.
+          continue;
+        }
+        if (child.key && child.props?.disabled) {
+          delete data[child.key]; // Assume a link between child.key and data. 🐭
+        }
+      }
+    }
+    return data;
+  }
+
   onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -47,7 +75,7 @@ export default class ApiForm extends Form<Props> {
       return;
     }
 
-    const {data} = this.state;
+    const data = this.getEnabledData();
 
     this.props.onSubmit && this.props.onSubmit(data);
     this.setState(
