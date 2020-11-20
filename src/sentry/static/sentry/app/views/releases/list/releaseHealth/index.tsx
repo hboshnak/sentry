@@ -6,7 +6,6 @@ import flatten from 'lodash/flatten';
 import {Release, GlobalSelection} from 'app/types';
 
 import Content from './content';
-import CompactContent from './compactContent';
 
 type Props = {
   release: Release;
@@ -32,27 +31,15 @@ const ReleaseHealth = ({
     )
   );
 
-  const hasAtLeastOneHealthData = sortedProjects.some(
-    sortedProject => sortedProject.hasHealthData
-  );
-
   const contentProps = {
     projects: sortedProjects,
     releaseVersion: release.version,
     orgSlug,
   };
 
-  if (hasAtLeastOneHealthData) {
-    return (
-      <Content
-        {...contentProps}
-        location={location}
-        showPlaceholders={showPlaceholders}
-      />
-    );
-  }
-
-  return <CompactContent {...contentProps} />;
+  return (
+    <Content {...contentProps} location={location} showPlaceholders={showPlaceholders} />
+  );
 };
 
 export default ReleaseHealth;
