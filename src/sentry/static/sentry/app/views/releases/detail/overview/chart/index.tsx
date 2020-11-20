@@ -9,6 +9,7 @@ import EventsChart from 'app/components/charts/eventsChart';
 import {t} from 'app/locale';
 import {decodeScalar} from 'app/utils/queryString';
 import theme from 'app/utils/theme';
+import {PlatformKey} from 'app/data/platformCategories';
 
 import ReleaseChartControls, {YAxis, PERFORMANCE_AXIS} from './releaseChartControls';
 import {ReleaseStatsRequestRenderProps} from '../releaseStatsRequest';
@@ -17,6 +18,7 @@ import {getReleaseEventView} from './utils';
 
 type Props = Omit<ReleaseStatsRequestRenderProps, 'crashFreeTimeBreakdown'> & {
   selection: GlobalSelection;
+  platform: PlatformKey;
   yAxis: YAxis;
   onYAxisChange: (yAxis: YAxis) => void;
   router: ReactRouter.InjectedRouter;
@@ -109,10 +111,20 @@ class ReleaseChartContainer extends React.Component<Props> {
   }
 
   renderHealthChart() {
-    const {loading, errored, reloading, chartData, selection, yAxis, router} = this.props;
+    const {
+      loading,
+      errored,
+      reloading,
+      chartData,
+      selection,
+      yAxis,
+      router,
+      platform,
+    } = this.props;
 
     return (
       <HealthChartContainer
+        platform={platform}
         loading={loading}
         errored={errored}
         reloading={reloading}

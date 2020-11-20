@@ -14,8 +14,10 @@ import {defined} from 'app/utils';
 import {getExactDuration} from 'app/utils/formatters';
 import {axisDuration} from 'app/utils/discover/charts';
 import {decodeList} from 'app/utils/queryString';
+import {PlatformKey} from 'app/data/platformCategories';
 
 import {YAxis} from './releaseChartControls';
+import {sessionTerm, getSessionTermDescription} from '../../../utils/sessionTerm';
 
 type Props = {
   reloading: boolean;
@@ -24,6 +26,7 @@ type Props = {
   zoomRenderProps: any;
   yAxis: YAxis;
   location: Location;
+  platform: PlatformKey;
   shouldRecalculateVisibleSeries: boolean;
   onVisibleSeriesRecalculated: () => void;
 };
@@ -59,7 +62,7 @@ class HealthChart extends React.Component<Props> {
     const {timeseriesData, location, shouldRecalculateVisibleSeries} = this.props;
 
     const otherAreasThanHealthyArePositive = timeseriesData
-      .filter(s => s.seriesName !== 'Healthy')
+      .filter(s => s.seriesName !== sessionTerm.healthy)
       .some(s => s.data.some(d => d.value > 0));
     const alreadySomethingUnselected = !!decodeList(location.query.unselectedSeries);
 
@@ -162,6 +165,27 @@ class HealthChart extends React.Component<Props> {
     }
   }
 
+  getLegendTooltipDescription(serieName: string) {
+    const {platform} = this.props;
+
+    switch (serieName) {
+      case sessionTerm.crashed:
+        return getSessionTermDescription('crashed', platform);
+      case sessionTerm.abnormal:
+        return getSessionTermDescription('abnormal', platform);
+      case sessionTerm.errored:
+        return getSessionTermDescription('errored', platform);
+      case sessionTerm.healthy:
+        return getSessionTermDescription('healthy', platform);
+      case sessionTerm['crash-free-users']:
+        return getSessionTermDescription('crash-free-users', platform);
+      case sessionTerm['crash-free-sessions']:
+        return getSessionTermDescription('crash-free-sessions', platform);
+      default:
+        return '';
+    }
+  }
+
   render() {
     const {utc, timeseriesData, zoomRenderProps, location} = this.props;
 
@@ -182,6 +206,27 @@ class HealthChart extends React.Component<Props> {
       },
       data: timeseriesData.map(d => d.seriesName).reverse(),
       selected: getSeriesSelection(location),
+      tooltip: {
+        show: true,
+        formatter: (params: {
+          $vars: string[];
+          componentType: string;
+          legendIndex: number;
+          name: string;
+        }): string => {
+          const serieNameDesc = this.getLegendTooltipDescription(params.name);
+
+          if (!serieNameDesc) {
+            return '';
+          }
+
+          return [
+            '<div class="tooltip-description">',
+            `<div>${serieNameDesc}</div>`,
+            '</div>',
+          ].join('');
+        },
+      },
     };
 
     return (

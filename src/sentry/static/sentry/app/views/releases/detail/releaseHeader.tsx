@@ -29,6 +29,7 @@ import {getAggregateAlias} from 'app/utils/discover/fields';
 
 import ReleaseStat from './releaseStat';
 import ReleaseActions from './releaseActions';
+import {getSessionTermDescription, sessionTerm} from '../utils/sessionTerm';
 
 type Props = {
   location: Location;
@@ -117,8 +118,8 @@ const ReleaseHeader = ({
           </ReleaseStat>
           {hasHealthData && (
             <ReleaseStat
-              label={t('Crashes')}
-              help={t('Crash means that user experienced an unhandled error')}
+              label={sessionTerm.crashes}
+              help={getSessionTermDescription('crashes', project.platform)}
             >
               <Count value={sessionsCrashed} />
             </ReleaseStat>

@@ -242,6 +242,7 @@ class ReleaseOverview extends AsyncView<Props> {
                         version={version}
                         hasDiscover={hasDiscover}
                         hasPerformance={hasPerformance}
+                        platform={project.platform}
                       />
                     )}
                     <Issues
