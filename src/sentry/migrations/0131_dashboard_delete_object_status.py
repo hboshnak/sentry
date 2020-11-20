@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
     atomic = True
 
     dependencies = [
-        ("sentry", "0129_remove_dashboard_keys"),
+        ("sentry", "0130_remove_old_widget_models"),
     ]
 
     operations = [
