@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ProcessingIssueHint from 'app/components/stream/processingIssueHint';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProcessingIssueHint', function () {
   let issue, wrapper;

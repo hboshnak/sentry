@@ -2,9 +2,8 @@
 
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import PluginIcon from 'app/plugins/components/pluginIcon';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 // For some reason jest only respects the last mocked, so we can't test
 // two different images here

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import {ProjectContext} from 'app/views/projects/projectContext';
+import {mount} from 'sentry-test/enzyme';
 
 jest.unmock('app/utils/recreateRoute');
 jest.mock('app/actionCreators/modal', () => ({

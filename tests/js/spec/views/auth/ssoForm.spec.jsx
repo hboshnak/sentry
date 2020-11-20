@@ -1,9 +1,8 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
-
-import {mount} from 'sentry-test/enzyme';
+import {browserHistory} from 'react-router';
 
 import SsoForm from 'app/views/auth/ssoForm';
+import {mount} from 'sentry-test/enzyme';
 
 function doSso(wrapper, apiRequest) {
   wrapper.find('#id-organization').simulate('change', {target: {value: 'org123'}});

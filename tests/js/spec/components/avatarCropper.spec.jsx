@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import AvatarCropper from 'app/components/avatarCropper';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('AvatarCropper', function () {
   const USER = {

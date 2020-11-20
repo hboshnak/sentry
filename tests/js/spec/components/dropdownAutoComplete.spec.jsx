@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import DropdownAutoComplete from 'app/components/dropdownAutoComplete';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('DropdownAutoComplete', function () {
   const routerContext = TestStubs.routerContext();

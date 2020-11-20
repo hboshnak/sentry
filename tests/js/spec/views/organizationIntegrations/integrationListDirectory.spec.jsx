@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-import {initializeOrg} from 'sentry-test/initializeOrg';
-
 import {Client} from 'app/api';
 import IntegrationListDirectory from 'app/views/organizationIntegrations/integrationListDirectory';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 const mockResponse = mocks => {
   mocks.forEach(([url, body]) =>

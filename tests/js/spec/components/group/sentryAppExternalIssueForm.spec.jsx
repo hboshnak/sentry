@@ -1,11 +1,10 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-import {selectByValue, changeInputValue} from 'sentry-test/select-new';
-
 import {Client} from 'app/api';
-import {addQueryParamsToExistingUrl} from 'app/utils/queryString';
 import SentryAppExternalIssueForm from 'app/components/group/sentryAppExternalIssueForm';
+import {addQueryParamsToExistingUrl} from 'app/utils/queryString';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {changeInputValue, selectByValue} from 'sentry-test/select-new';
 
 const optionLabelSelector = label => `[label="${label}"]`;
 

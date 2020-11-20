@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import PropTypes from 'prop-types';
 
 import {Client} from 'app/api';
 import AccountAuthorizations from 'app/views/settings/account/accountAuthorizations';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('AccountAuthorizations', function () {
   beforeEach(function () {

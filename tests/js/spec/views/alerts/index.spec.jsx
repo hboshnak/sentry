@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import AlertsContainer from 'app/views/alerts';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('AlertsContainer', function () {
   describe('no access without feature flag', function () {

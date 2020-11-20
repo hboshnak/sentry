@@ -1,12 +1,11 @@
 import React from 'react';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import TransactionsList from 'app/components/discover/transactionsList';
 import {t} from 'app/locale';
 import EventView from 'app/utils/discover/eventView';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('TransactionsList', function () {
   let wrapper;

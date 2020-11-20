@@ -1,9 +1,8 @@
 /*global global*/
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import AddIntegrationButton from 'app/views/organizationIntegrations/addIntegrationButton';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('AddIntegrationButton', function () {
   const provider = TestStubs.GitHubIntegrationProvider();

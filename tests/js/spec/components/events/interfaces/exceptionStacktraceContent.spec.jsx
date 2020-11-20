@@ -1,10 +1,9 @@
 import React from 'react';
 import cloneDeep from 'lodash/cloneDeep';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ExceptionStacktraceContent from 'app/components/events/interfaces/exceptionStacktraceContent';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ExceptionStacktraceContent', () => {
   const stacktrace = {

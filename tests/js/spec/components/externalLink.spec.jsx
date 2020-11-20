@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ExternalLink from 'app/components/links/externalLink';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ExternalLink', function () {
   it('renders', function () {

@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import AccountSecurity from 'app/views/settings/account/accountSecurity';
 import AccountSecurityWrapper from 'app/views/settings/account/accountSecurity/accountSecurityWrapper';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const ENDPOINT = '/users/me/authenticators/';
 const ORG_ENDPOINT = '/organizations/';

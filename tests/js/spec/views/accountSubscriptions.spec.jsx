@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import PropTypes from 'prop-types';
 
 import {Client} from 'app/api';
 import AccountSubscriptions from 'app/views/settings/account/accountSubscriptions';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const ENDPOINT = '/users/me/subscriptions/';
 

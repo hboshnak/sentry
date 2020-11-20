@@ -1,9 +1,8 @@
 import React from 'react';
 
+import IncidentRulesCreate from 'app/views/settings/incidentRules/create';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import IncidentRulesCreate from 'app/views/settings/incidentRules/create';
 
 describe('Incident Rules Create', function () {
   let eventStatsMock;

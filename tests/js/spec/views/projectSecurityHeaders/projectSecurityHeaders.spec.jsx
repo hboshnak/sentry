@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ProjectSecurityHeaders from 'app/views/settings/projectSecurityHeaders';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProjectSecurityHeaders', function () {
   const org = TestStubs.Organization();

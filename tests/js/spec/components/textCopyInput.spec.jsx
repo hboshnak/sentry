@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import TextCopyInput from 'app/views/settings/components/forms/textCopyInput';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('TextCopyInput', function () {
   it('renders', function () {

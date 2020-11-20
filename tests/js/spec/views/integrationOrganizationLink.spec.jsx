@@ -1,10 +1,9 @@
 import React from 'react';
 import pick from 'lodash/pick';
 
+import IntegrationOrganizationLink from 'app/views/integrationOrganizationLink';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {selectByValue} from 'sentry-test/select-new';
-
-import IntegrationOrganizationLink from 'app/views/integrationOrganizationLink';
 
 describe('IntegrationOrganizationLink', () => {
   let wrapper,

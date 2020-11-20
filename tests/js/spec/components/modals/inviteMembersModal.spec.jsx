@@ -1,10 +1,9 @@
-import {Modal} from 'react-bootstrap';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {Modal} from 'react-bootstrap';
 
 import InviteMembersModal from 'app/components/modals/inviteMembersModal';
 import TeamStore from 'app/stores/teamStore';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('InviteMembersModal', function () {
   const team = TestStubs.Team();

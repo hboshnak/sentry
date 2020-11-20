@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import OrganizationAuditLog from 'app/views/settings/organizationAuditLog';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('jquery');
 

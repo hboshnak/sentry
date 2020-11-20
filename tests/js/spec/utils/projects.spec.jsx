@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
-import Projects from 'app/utils/projects';
-import ProjectsStore from 'app/stores/projectsStore';
 import ProjectActions from 'app/actions/projectActions';
+import ProjectsStore from 'app/stores/projectsStore';
+import Projects from 'app/utils/projects';
+import {mount} from 'sentry-test/enzyme';
 
 describe('utils.projects', function () {
   const renderer = jest.fn(() => null);

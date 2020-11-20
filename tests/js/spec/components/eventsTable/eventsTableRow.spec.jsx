@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {EventsTableRow} from 'app/components/eventsTable/eventsTableRow';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('EventsTableRow', function () {
   it('renders', function () {

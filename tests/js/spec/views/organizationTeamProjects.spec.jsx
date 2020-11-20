@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-import {initializeOrg} from 'sentry-test/initializeOrg';
-
 import {Client} from 'app/api';
 import {TeamProjects as OrganizationTeamProjects} from 'app/views/settings/organizationTeams/teamProjects';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('OrganizationTeamProjects', function () {
   let team;

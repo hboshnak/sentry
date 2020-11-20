@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import ConfigStore from 'app/stores/configStore';
 import withConfig from 'app/utils/withConfig';
+import {mount} from 'sentry-test/enzyme';
 
 describe('withConfig HoC', function () {
   it('adds config prop', async function () {

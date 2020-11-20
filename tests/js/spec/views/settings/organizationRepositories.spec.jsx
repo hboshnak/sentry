@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import OrganizationRepositories from 'app/views/settings/organizationRepositories/organizationRepositories';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('OrganizationRepositories', function () {
   it('renders without providers', function () {

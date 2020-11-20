@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import OrganizationSecurityAndPrivacy from 'app/views/settings/organizationSecurityAndPrivacy';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('OrganizationSecurityAndPrivacy', function () {
   let organization;

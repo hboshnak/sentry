@@ -1,9 +1,8 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import QueryList from 'app/views/eventsV2/queryList';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 function openContextMenu(card) {
   card.find('DropdownMenu MoreOptions svg').simulate('click');

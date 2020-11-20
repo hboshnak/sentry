@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ApiNewToken from 'app/views/settings/account/apiNewToken';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ApiNewToken', function () {
   describe('render()', function () {

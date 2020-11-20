@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import CommitterStore from 'app/stores/committerStore';
 import withCommitters from 'app/utils/withCommitters';
+import {mount} from 'sentry-test/enzyme';
 
 describe('withCommitters HoC', function () {
   const organization = TestStubs.Organization();

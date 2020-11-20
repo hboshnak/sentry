@@ -1,11 +1,10 @@
 import React from 'react';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import OrganizationStore from 'app/stores/organizationStore';
 import OrganizationPerformance from 'app/views/settings/organizationPerformance';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('Settings > OrganizationPerformance', function () {
   const organization = TestStubs.Organization({

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import UserBadge from 'app/components/idBadge/userBadge';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('UserBadge', function () {
   const user = TestStubs.User();

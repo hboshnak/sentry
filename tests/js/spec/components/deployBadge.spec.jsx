@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import DeployBadge from 'app/components/deployBadge';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const deploy = {
   name: '85fedddce5a61a58b160fa6b3d6a1a8451e94eb9 to prod',

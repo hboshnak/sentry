@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ScoreBar from 'app/components/scoreBar';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ScoreBar', function () {
   beforeEach(function () {});

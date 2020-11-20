@@ -1,15 +1,14 @@
-import {withRouter, browserHistory} from 'react-router';
 import React from 'react';
+import {browserHistory, withRouter} from 'react-router';
 
+import ProjectsStore from 'app/stores/projectsStore';
+import {getUtcToLocalDateObject} from 'app/utils/dates';
+import EventsContainer from 'app/views/events';
+import Events, {parseRowFromLinks} from 'app/views/events/events';
 import {chart, doZoom} from 'sentry-test/charts';
+import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
 import {mockRouterPush} from 'sentry-test/mockRouterPush';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import {getUtcToLocalDateObject} from 'app/utils/dates';
-import Events, {parseRowFromLinks} from 'app/views/events/events';
-import EventsContainer from 'app/views/events';
-import ProjectsStore from 'app/stores/projectsStore';
 
 jest.mock('app/utils/withLatestContext');
 

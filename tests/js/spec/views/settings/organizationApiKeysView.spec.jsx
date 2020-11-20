@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import OrganizationApiKeys from 'app/views/settings/organizationApiKeys';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const routes = [
   {path: '/'},

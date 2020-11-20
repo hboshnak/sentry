@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import CommandLine from 'app/components/commandLine';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('CommandLine', () => {
   it('renders', () => {

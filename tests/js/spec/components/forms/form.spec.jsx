@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Form} from 'app/components/forms';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('Form', function () {
   describe('render()', function () {

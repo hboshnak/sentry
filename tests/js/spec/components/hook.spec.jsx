@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import Hook from 'app/components/hook';
 import HookStore from 'app/stores/hookStore';
+import {mount} from 'sentry-test/enzyme';
 
 describe('Hook', function () {
   const Wrapper = function Wrapper(props) {

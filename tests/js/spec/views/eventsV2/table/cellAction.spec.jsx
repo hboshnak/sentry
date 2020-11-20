@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import CellAction, {Actions, updateQuery} from 'app/views/eventsV2/table/cellAction';
 import EventView from 'app/utils/discover/eventView';
 import {QueryResults} from 'app/utils/tokenizeSearch';
+import CellAction, {Actions, updateQuery} from 'app/views/eventsV2/table/cellAction';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const defaultData = {
   transaction: 'best-transaction',

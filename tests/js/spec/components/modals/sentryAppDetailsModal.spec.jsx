@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import SentryAppDetailsModal from 'app/components/modals/sentryAppDetailsModal';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('SentryAppDetailsModal', function () {
   let wrapper;

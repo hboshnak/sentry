@@ -1,13 +1,12 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import SourceField from 'app/views/settings/components/dataScrubbing/modals/form/sourceField';
 import {
   binarySuggestions,
   unarySuggestions,
   valueSuggestions,
 } from 'app/views/settings/components/dataScrubbing/utils';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 function renderComponent({
   value = '$string',

@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme, mount} from 'sentry-test/enzyme';
-
 import {NumberField} from 'app/components/forms';
 import Form from 'app/components/forms/form';
+import {mount, mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('jquery');
 

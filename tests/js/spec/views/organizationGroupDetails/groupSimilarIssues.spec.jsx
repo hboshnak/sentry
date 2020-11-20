@@ -1,9 +1,8 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {browserHistory} from 'react-router';
 
 import GroupSimilarIssues from 'app/views/organizationGroupDetails/groupSimilarIssues';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('Issues Similar View', function () {
   let mock;

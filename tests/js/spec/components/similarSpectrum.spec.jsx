@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import SimilarSpectrum from 'app/components/similarSpectrum';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('SimilarSpectrum', function () {
   beforeEach(function () {});

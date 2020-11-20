@@ -1,10 +1,9 @@
 import React from 'react';
 
+import ProjectsStore from 'app/stores/projectsStore';
+import IncidentDetails from 'app/views/alerts/details';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import IncidentDetails from 'app/views/alerts/details';
-import ProjectsStore from 'app/stores/projectsStore';
 
 describe('IncidentDetails', function () {
   const params = {orgId: 'org-slug', alertId: '123'};

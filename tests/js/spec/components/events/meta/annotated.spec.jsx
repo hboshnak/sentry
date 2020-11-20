@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import Annotated from 'app/components/events/meta/annotated';
 import {withMeta} from 'app/components/events/meta/metaProxy';
+import {mount} from 'sentry-test/enzyme';
 
 describe('Annotated', () => {
   const mock = jest.fn(() => null);

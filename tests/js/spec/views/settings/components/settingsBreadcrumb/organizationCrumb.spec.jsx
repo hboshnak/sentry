@@ -1,10 +1,9 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
-
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {browserHistory} from 'react-router';
 
 import OrganizationCrumb from 'app/views/settings/components/settingsBreadcrumb/organizationCrumb';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 jest.unmock('app/utils/recreateRoute');
 

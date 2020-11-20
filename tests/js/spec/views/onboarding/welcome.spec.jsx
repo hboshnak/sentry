@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import OnboardingWelcome from 'app/views/onboarding/welcome';
 import ConfigStore from 'app/stores/configStore';
+import OnboardingWelcome from 'app/views/onboarding/welcome';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('OnboardingWelcome', function () {
   it('renders', function () {

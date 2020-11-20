@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ConfigStore from 'app/stores/configStore';
 import OrganizationCreate from 'app/views/organizationCreate';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('OrganizationCreate', function () {
   let privacyUrl, termsUrl;

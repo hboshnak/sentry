@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ContextData from 'app/components/contextData';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ContextData', function () {
   describe('render()', function () {

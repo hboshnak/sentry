@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ProcessingIssueList from 'app/components/stream/processingIssueList';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProcessingIssueList', function () {
   let wrapper, projects, organization, fetchIssueRequest;

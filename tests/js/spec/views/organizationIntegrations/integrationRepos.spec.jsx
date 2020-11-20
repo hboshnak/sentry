@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import RepositoryActions from 'app/actions/repositoryActions';
 import {Client} from 'app/api';
 import IntegrationRepos from 'app/views/organizationIntegrations/integrationRepos';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('IntegrationRepos', function () {
   const org = TestStubs.Organization();

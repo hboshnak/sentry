@@ -1,11 +1,10 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import EventView from 'app/utils/discover/eventView';
 import TableView from 'app/views/eventsV2/table/tableView';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('TableView > CellActions', function () {
   let initialData, rows, onChangeShowTags;

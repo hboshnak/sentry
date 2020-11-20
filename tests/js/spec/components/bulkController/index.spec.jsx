@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {shallow} from 'sentry-test/enzyme';
-
 import BulkController from 'app/components/bulkController';
+import {shallow} from 'sentry-test/enzyme';
 
 describe('BulkController', function () {
   let wrapper, renderProp, toggleRow, selectPage, deselectPage, selectAll, unselectAll;

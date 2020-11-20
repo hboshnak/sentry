@@ -1,15 +1,14 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
-import Indicators from 'app/components/indicators';
-import IndicatorStore from 'app/stores/indicatorStore';
 import {
-  clearIndicators,
-  addSuccessMessage,
   addErrorMessage,
   addMessage,
+  addSuccessMessage,
+  clearIndicators,
 } from 'app/actionCreators/indicator';
+import Indicators from 'app/components/indicators';
+import IndicatorStore from 'app/stores/indicatorStore';
+import {mount} from 'sentry-test/enzyme';
 
 // Make sure we use `duration: null` to test add/remove
 jest.useFakeTimers();

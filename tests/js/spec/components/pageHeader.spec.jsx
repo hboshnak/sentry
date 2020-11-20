@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import PageHeading from 'app/components/pageHeading';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('PageHeading', function () {
   it('renders', function () {

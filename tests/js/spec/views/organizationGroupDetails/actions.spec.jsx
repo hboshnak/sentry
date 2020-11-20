@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import GroupActions from 'app/views/organizationGroupDetails/actions';
 import ConfigStore from 'app/stores/configStore';
+import GroupActions from 'app/views/organizationGroupDetails/actions';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('GroupActions', function () {
   beforeEach(function () {

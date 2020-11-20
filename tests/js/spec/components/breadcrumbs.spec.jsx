@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {shallow} from 'sentry-test/enzyme';
-
 import Breadcrumbs from 'app/components/breadcrumbs';
+import {shallow} from 'sentry-test/enzyme';
 
 describe('Breadcrumbs', () => {
   const wrapper = shallow(

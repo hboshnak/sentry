@@ -1,9 +1,8 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {browserHistory} from 'react-router';
 
 import {ProjectInstallPlatform} from 'app/views/projectInstall/platform';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProjectInstallPlatform', function () {
   describe('render()', function () {

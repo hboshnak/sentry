@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ConfirmDelete from 'app/components/confirmDelete';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ConfirmDelete', function () {
   it('renders', function () {

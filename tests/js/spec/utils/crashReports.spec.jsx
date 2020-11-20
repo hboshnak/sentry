@@ -1,11 +1,10 @@
 import React from 'react';
 
-import {shallow} from 'sentry-test/enzyme';
-
 import {
   formatStoreCrashReports,
   getStoreCrashReportsValues,
 } from 'app/utils/crashReports';
+import {shallow} from 'sentry-test/enzyme';
 
 describe('crashReportsUtils', () => {
   it('returns correct values for organization scope', () => {

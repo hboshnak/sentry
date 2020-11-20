@@ -1,9 +1,8 @@
 import React from 'react';
 
+import WidgetChart from 'app/views/dashboards/widgetChart';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import WidgetChart from 'app/views/dashboards/widgetChart';
 
 describe('WidgetChart', function () {
   const {organization, router, routerContext} = initializeOrg({

@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import IntegrationDetailedView from 'app/views/organizationIntegrations/integrationDetailedView';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const mockResponse = mocks => {
   mocks.forEach(([url, body]) =>

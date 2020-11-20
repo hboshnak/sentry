@@ -1,9 +1,8 @@
 import React from 'react';
 
+import {Form, SelectField} from 'app/components/forms';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {selectByValue} from 'sentry-test/select';
-
-import {Form, SelectField} from 'app/components/forms';
 
 describe('SelectField', function () {
   describe('deprecatedSelectControl', function () {

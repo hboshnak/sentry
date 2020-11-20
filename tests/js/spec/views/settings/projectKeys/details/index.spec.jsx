@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import PropTypes from 'prop-types';
 
 import ProjectKeyDetails from 'app/views/settings/project/projectKeys/details';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProjectKeyDetails', function () {
   let org;

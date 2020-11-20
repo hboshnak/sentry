@@ -1,10 +1,9 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
-
-import {mount} from 'sentry-test/enzyme';
+import {browserHistory} from 'react-router';
 
 import ConfigStore from 'app/stores/configStore';
 import RegisterForm from 'app/views/auth/registerForm';
+import {mount} from 'sentry-test/enzyme';
 
 function doLogin(wrapper, apiRequest) {
   wrapper.find('#id-name').simulate('change', {target: {value: 'joe'}});

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import NoProjectMessage from 'app/components/noProjectMessage';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('NoProjectMessage', function () {
   const org = TestStubs.Organization();

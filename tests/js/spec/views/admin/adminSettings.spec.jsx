@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import AdminSettings from 'app/views/admin/adminSettings';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 // TODO(dcramer): this doesnt really test anything as we need to
 // mock the API Response/wait on it

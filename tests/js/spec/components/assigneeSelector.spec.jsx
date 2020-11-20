@@ -1,18 +1,17 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
+import {openInviteMembersModal} from 'app/actionCreators/modal';
+import {Client} from 'app/api';
 import {
   AssigneeSelectorComponent,
   putSessionUserFirst,
 } from 'app/components/assigneeSelector';
-import {Client} from 'app/api';
 import ConfigStore from 'app/stores/configStore';
 import GroupStore from 'app/stores/groupStore';
 import MemberListStore from 'app/stores/memberListStore';
 import ProjectsStore from 'app/stores/projectsStore';
 import TeamStore from 'app/stores/teamStore';
-import {openInviteMembersModal} from 'app/actionCreators/modal';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('app/actionCreators/modal', () => ({
   openInviteMembersModal: jest.fn(),

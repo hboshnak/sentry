@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {saveOnBlurUndoMessage} from 'app/actionCreators/indicator';
 import OrganizationSettingsForm from 'app/views/settings/organizationGeneralSettings/organizationSettingsForm';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('jquery');
 jest.mock('app/actionCreators/indicator');

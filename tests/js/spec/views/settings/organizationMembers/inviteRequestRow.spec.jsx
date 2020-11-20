@@ -1,9 +1,8 @@
 import React from 'react';
 
+import InviteRequestRow from 'app/views/settings/organizationMembers/inviteRequestRow';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {selectByValue} from 'sentry-test/select';
-
-import InviteRequestRow from 'app/views/settings/organizationMembers/inviteRequestRow';
 
 const roles = [
   {

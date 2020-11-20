@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import EventDataSection from 'app/components/events/eventDataSection';
 import KeyValueList from 'app/components/events/interfaces/keyValueList/keyValueList';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const data = {
   metadata: {

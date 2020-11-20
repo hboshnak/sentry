@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import AccountIdentities from 'app/views/settings/account/accountIdentities';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const ENDPOINT = '/users/me/social-identities/';
 

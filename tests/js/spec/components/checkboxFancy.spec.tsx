@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import CheckboxFancy from 'app/components/checkboxFancy/checkboxFancy';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('CheckboxFancy', function () {
   it('renders', function () {

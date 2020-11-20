@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import GroupTags from 'app/views/organizationGroupDetails/groupTags';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('GroupTags', function () {
   const {routerContext, router, organization} = initializeOrg();

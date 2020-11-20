@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import SentryAppExternalIssueActions from 'app/components/group/sentryAppExternalIssueActions';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('SentryAppExternalIssueActions', () => {
   let group;

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import Avatar from 'app/components/avatar';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('app/stores/configStore', () => ({
   getConfig: () => ({

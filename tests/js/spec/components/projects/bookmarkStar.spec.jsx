@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import BookmarkStar from 'app/components/projects/bookmarkStar';
+import {mount} from 'sentry-test/enzyme';
 
 describe('BookmarkStar', function () {
   let wrapper, projectMock;

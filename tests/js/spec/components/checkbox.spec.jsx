@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import Checkbox from 'app/components/checkbox';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('Checkbox', function () {
   it('renders', function () {

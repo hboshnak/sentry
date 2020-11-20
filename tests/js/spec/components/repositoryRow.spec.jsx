@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import RepositoryRow from 'app/components/repositoryRow';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('RepositoryRow', function () {
   beforeEach(function () {

@@ -1,11 +1,10 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {openInviteMembersModal} from 'app/actionCreators/modal';
 import {trackAnalyticsEvent} from 'app/utils/analytics';
 import OrganizationMembersList from 'app/views/settings/organizationMembers/organizationMembersList';
 import OrganizationMembersWrapper from 'app/views/settings/organizationMembers/organizationMembersWrapper';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('app/utils/analytics', () => ({
   trackAnalyticsEvent: jest.fn(),

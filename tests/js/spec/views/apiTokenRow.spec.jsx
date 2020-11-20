@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ApiTokenRow from 'app/views/settings/account/apiTokenRow';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ApiTokenRow', function () {
   it('renders', function () {

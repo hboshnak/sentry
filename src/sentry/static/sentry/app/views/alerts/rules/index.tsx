@@ -1,30 +1,31 @@
-import {RouteComponentProps} from 'react-router/lib/Router';
 import React from 'react';
+import {RouteComponentProps} from 'react-router/lib/Router';
 import styled from '@emotion/styled';
 import flatten from 'lodash/flatten';
 
+import {addErrorMessage} from 'app/actionCreators/indicator';
+import AsyncComponent from 'app/components/asyncComponent';
+import * as Layout from 'app/components/layouts/thirds';
+import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
+import LoadingIndicator from 'app/components/loadingIndicator';
+import GlobalSelectionHeader from 'app/components/organizations/globalSelectionHeader';
+import Pagination from 'app/components/pagination';
+import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
+import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
+import {IconArrow, IconCheckmark} from 'app/icons';
 import {t, tct} from 'app/locale';
-import {IconCheckmark, IconArrow} from 'app/icons';
 import {Organization, Project} from 'app/types';
 import {IssueAlertRule} from 'app/types/alerts';
 import {trackAnalyticsEvent} from 'app/utils/analytics';
-import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
-import AsyncComponent from 'app/components/asyncComponent';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import ExternalLink from 'app/components/links/externalLink';
-import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
-import Link from 'app/components/links/link';
-import LoadingIndicator from 'app/components/loadingIndicator';
-import * as Layout from 'app/components/layouts/thirds';
-import Pagination from 'app/components/pagination';
 import Projects from 'app/utils/projects';
-import GlobalSelectionHeader from 'app/components/organizations/globalSelectionHeader';
-import {addErrorMessage} from 'app/actionCreators/indicator';
+import EmptyMessage from 'app/views/settings/components/emptyMessage';
 
 import AlertHeader from '../list/header';
 import {isIssueAlert} from '../utils';
-import {TableLayout} from './styles';
+
 import RuleListRow from './row';
+import {TableLayout} from './styles';
 
 const DEFAULT_SORT: {asc: boolean; field: 'date_added'} = {
   asc: false,

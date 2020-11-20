@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import SimilarScoreCard from 'app/components/similarScoreCard';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('SimilarScoreCard', function () {
   beforeEach(function () {});

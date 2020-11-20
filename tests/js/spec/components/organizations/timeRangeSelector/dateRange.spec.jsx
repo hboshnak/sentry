@@ -1,10 +1,9 @@
 import React from 'react';
 import MockDate from 'mockdate';
 
-import {mount} from 'sentry-test/enzyme';
-
-import ConfigStore from 'app/stores/configStore';
 import DateRange from 'app/components/organizations/timeRangeSelector/dateRange';
+import ConfigStore from 'app/stores/configStore';
+import {mount} from 'sentry-test/enzyme';
 
 // 2017-10-14T02:38:00.000Z
 // 2017-10-17T02:38:00.000Z

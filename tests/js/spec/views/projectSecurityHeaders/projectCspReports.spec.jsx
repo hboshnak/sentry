@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ProjectCspReports from 'app/views/settings/projectSecurityHeaders/csp';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProjectCspReports', function () {
   const org = TestStubs.Organization();

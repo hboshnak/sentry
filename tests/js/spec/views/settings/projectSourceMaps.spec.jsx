@@ -1,10 +1,9 @@
 import React from 'react';
 
+import ProjectSourceMapsDetail from 'app/views/settings/projectSourceMaps/detail';
+import ProjectSourceMaps from 'app/views/settings/projectSourceMaps/list';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import ProjectSourceMaps from 'app/views/settings/projectSourceMaps/list';
-import ProjectSourceMapsDetail from 'app/views/settings/projectSourceMaps/detail';
 
 describe('ProjectSourceMaps', function () {
   const {organization, project, routerContext, router} = initializeOrg({});

@@ -1,11 +1,11 @@
-import {t} from 'app/locale';
-import {Incident, IncidentStats} from 'app/views/alerts/types';
-import {Project} from 'app/types';
 import Link from 'app/components/links/link';
+import {t} from 'app/locale';
+import {Project} from 'app/types';
 import {DisplayModes} from 'app/utils/discover/types';
 import {tokenizeSearch} from 'app/utils/tokenizeSearch';
-import {transactionSummaryRouteWithQuery} from 'app/views/performance/transactionSummary/utils';
+import {Incident, IncidentStats} from 'app/views/alerts/types';
 import {getIncidentDiscoverUrl, getStartEndFromStats} from 'app/views/alerts/utils';
+import {transactionSummaryRouteWithQuery} from 'app/views/performance/transactionSummary/utils';
 
 import {Dataset} from './types';
 

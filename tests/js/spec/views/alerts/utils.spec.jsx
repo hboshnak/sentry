@@ -1,7 +1,6 @@
-import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import {Dataset} from 'app/views/settings/incidentRules/types';
 import {getIncidentDiscoverUrl} from 'app/views/alerts/utils';
+import {Dataset} from 'app/views/settings/incidentRules/types';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('Alert utils', function () {
   const {org, projects} = initializeOrg();

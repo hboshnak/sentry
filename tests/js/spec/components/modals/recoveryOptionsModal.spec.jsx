@@ -1,9 +1,8 @@
-import {Modal} from 'react-bootstrap';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {Modal} from 'react-bootstrap';
 
 import RecoveryOptionsModal from 'app/components/modals/recoveryOptionsModal';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('RecoveryOptionsModal', function () {
   const closeModal = jest.fn();

@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import TeamStore from 'app/stores/teamStore';
 import TeamSettings from 'app/views/settings/organizationTeams/teamSettings';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('TeamSettings', function () {
   beforeEach(function () {

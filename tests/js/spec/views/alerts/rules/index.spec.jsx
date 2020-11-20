@@ -1,10 +1,9 @@
 import React from 'react';
 
+import ProjectsStore from 'app/stores/projectsStore';
+import AlertRulesList from 'app/views/alerts/rules';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import AlertRulesList from 'app/views/alerts/rules';
-import ProjectsStore from 'app/stores/projectsStore';
 
 describe('OrganizationRuleList', () => {
   const {routerContext, organization} = initializeOrg();

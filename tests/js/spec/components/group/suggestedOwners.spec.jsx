@@ -1,11 +1,10 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import SuggestedOwners from 'app/components/group/suggestedOwners/suggestedOwners';
-import MemberListStore from 'app/stores/memberListStore';
-import CommitterStore from 'app/stores/committerStore';
 import {Client} from 'app/api';
+import SuggestedOwners from 'app/components/group/suggestedOwners/suggestedOwners';
+import CommitterStore from 'app/stores/committerStore';
+import MemberListStore from 'app/stores/memberListStore';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('SuggestedOwners', function () {
   const user = TestStubs.User();

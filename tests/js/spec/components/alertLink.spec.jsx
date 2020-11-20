@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import AlertLink from 'app/components/alertLink';
 import {IconMail} from 'app/icons';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('AlertLink', function () {
   it('renders', function () {

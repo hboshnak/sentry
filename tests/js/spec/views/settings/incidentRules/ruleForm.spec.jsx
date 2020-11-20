@@ -1,11 +1,10 @@
 import React from 'react';
 
+import {addErrorMessage} from 'app/actionCreators/indicator';
+import FormModel from 'app/views/settings/components/forms/model';
+import RuleFormContainer from 'app/views/settings/incidentRules/ruleForm';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import {addErrorMessage} from 'app/actionCreators/indicator';
-import RuleFormContainer from 'app/views/settings/incidentRules/ruleForm';
-import FormModel from 'app/views/settings/components/forms/model';
 
 jest.mock('app/actionCreators/indicator');
 

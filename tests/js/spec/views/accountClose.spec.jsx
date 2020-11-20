@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import AccountClose from 'app/views/settings/account/accountClose';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('AccountClose', function () {
   let deleteMock;

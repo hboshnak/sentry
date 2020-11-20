@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import GroupTagDistributionMeter from 'app/components/group/tagDistributionMeter';
+import {mount} from 'sentry-test/enzyme';
 
 describe('TagDistributionMeter', function () {
   let element;

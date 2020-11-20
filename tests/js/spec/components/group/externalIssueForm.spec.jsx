@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ExternalIssueForm from 'app/components/group/externalIssueForm';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('lodash/debounce', () => {
   const debounceMap = new Map();

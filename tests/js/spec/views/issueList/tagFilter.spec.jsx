@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import IssueListTagFilter from 'app/views/issueList/tagFilter';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('IssueListTagFilter', function () {
   let tagValueLoader;

@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ProjectSecurityAndPrivacy, {
   ProjectSecurityAndPrivacyProps,
 } from 'app/views/settings/projectSecurityAndPrivacy';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 // @ts-expect-error
 const org = TestStubs.Organization();

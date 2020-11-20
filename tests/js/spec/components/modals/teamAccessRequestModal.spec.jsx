@@ -1,9 +1,8 @@
-import {Modal} from 'react-bootstrap';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {Modal} from 'react-bootstrap';
 
 import TeamAccessRequestModal from 'app/components/modals/teamAccessRequestModal';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('TeamAccessRequestModal', function () {
   let wrapper;

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import EventOrGroupTitle from 'app/components/eventOrGroupTitle';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('EventOrGroupTitle', function () {
   const data = {

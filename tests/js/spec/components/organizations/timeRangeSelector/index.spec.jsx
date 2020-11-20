@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import ConfigStore from 'app/stores/configStore';
 import TimeRangeSelector from 'app/components/organizations/timeRangeSelector';
+import ConfigStore from 'app/stores/configStore';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('TimeRangeSelector', function () {
   let wrapper;

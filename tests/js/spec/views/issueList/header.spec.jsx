@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import IssueListHeader from 'app/views/issueList/header';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('IssueListHeader', () => {
   it('renders active tab with count when query matches inbox', () => {

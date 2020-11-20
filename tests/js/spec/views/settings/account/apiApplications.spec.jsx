@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ApiApplications from 'app/views/settings/account/apiApplications';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 describe('ApiApplications', function () {
   let requestMock;

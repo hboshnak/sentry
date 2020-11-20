@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
-import TagStore from 'app/stores/tagStore';
 import MemberListStore from 'app/stores/memberListStore';
+import TagStore from 'app/stores/tagStore';
 import withIssueTags from 'app/utils/withIssueTags';
+import {mount} from 'sentry-test/enzyme';
 
 describe('withIssueTags HoC', function () {
   beforeEach(() => {

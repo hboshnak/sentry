@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import QueryCount from 'app/components/queryCount';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('QueryCount', function () {
   it('displays count when no max', function () {

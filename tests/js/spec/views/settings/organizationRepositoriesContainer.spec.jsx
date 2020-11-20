@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import PropTypes from 'prop-types';
 
 import {Client} from 'app/api';
 import OrganizationRepositoriesContainer from 'app/views/settings/organizationRepositories';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const childContextTypes = {
   organization: PropTypes.object,

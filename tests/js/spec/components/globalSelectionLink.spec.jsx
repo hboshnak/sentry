@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import GlobalSelectionLink from 'app/components/globalSelectionLink';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const path = 'http://some.url/';
 

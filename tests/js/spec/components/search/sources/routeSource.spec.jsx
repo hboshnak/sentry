@@ -1,9 +1,8 @@
 import React from 'react';
 
+import {RouteSource} from 'app/components/search/sources/routeSource';
 import {mount} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import {RouteSource} from 'app/components/search/sources/routeSource';
 
 describe('RouteSource', function () {
   let wrapper;

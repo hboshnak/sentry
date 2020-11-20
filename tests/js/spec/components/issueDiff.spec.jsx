@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {IssueDiff} from 'app/components/issueDiff';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('app/api');
 

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import Qrcode from 'app/components/qrcode';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('Qrcode', function () {
   it('renders', function () {

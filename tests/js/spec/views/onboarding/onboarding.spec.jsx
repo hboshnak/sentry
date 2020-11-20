@@ -1,11 +1,10 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
+import {browserHistory} from 'react-router';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import Onboarding, {stepPropTypes} from 'app/views/onboarding/onboarding';
 import ProjectsStore from 'app/stores/projectsStore';
+import Onboarding, {stepPropTypes} from 'app/views/onboarding/onboarding';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 const MockStep = ({
   name,

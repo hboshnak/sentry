@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ProjectExpectCtReports from 'app/views/settings/projectSecurityHeaders/expectCt';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProjectExpectCtReports', function () {
   const org = TestStubs.Organization();

@@ -1,18 +1,18 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
+import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
 
-import {API_ACCESS_SCOPES} from 'app/constants';
 import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
-import {t} from 'app/locale';
-import space from 'app/styles/space';
 import ApiForm from 'app/components/forms/apiForm';
 import MultipleCheckboxField from 'app/components/forms/multipleCheckboxField';
-import AsyncView from 'app/views/asyncView';
-import SentryTypes from 'app/sentryTypes';
-import TextField from 'app/components/forms/textField';
 import TextareaField from 'app/components/forms/textareaField';
+import TextField from 'app/components/forms/textField';
+import {API_ACCESS_SCOPES} from 'app/constants';
+import {t} from 'app/locale';
+import SentryTypes from 'app/sentryTypes';
+import space from 'app/styles/space';
 import recreateRoute from 'app/utils/recreateRoute';
+import AsyncView from 'app/views/asyncView';
 
 const API_CHOICES = API_ACCESS_SCOPES.map(s => [s, s]);
 

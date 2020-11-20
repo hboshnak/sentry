@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import FormModel from 'app/views/settings/components/forms/model';
 import Subscriptions from 'app/views/settings/organizationDeveloperSettings/resourceSubscriptions';
+import {mount} from 'sentry-test/enzyme';
 
 describe('Resource Subscriptions', () => {
   let wrapper;

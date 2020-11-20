@@ -1,9 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import IgnoreActions from 'app/components/actions/ignore';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('IgnoreActions', function () {
   const routerContext = TestStubs.routerContext();

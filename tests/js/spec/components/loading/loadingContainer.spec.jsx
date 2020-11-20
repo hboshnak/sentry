@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import LoadingContainer from 'app/components/loading/loadingContainer';
+import {mount} from 'sentry-test/enzyme';
 
 describe('LoadingContainer', function () {
   let wrapper;

@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
-import {OrganizationRoot} from 'app/views/organizationRoot';
-import {setActiveProject} from 'app/actionCreators/projects';
 import {setLastRoute} from 'app/actionCreators/navigation';
+import {setActiveProject} from 'app/actionCreators/projects';
+import {OrganizationRoot} from 'app/views/organizationRoot';
+import {mount} from 'sentry-test/enzyme';
 
 jest.mock('app/actionCreators/projects', () => ({
   setActiveProject: jest.fn(),

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import Orderby from 'app/views/discover/sidebar/orderby';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('orderBy', function () {
   let organization, project, wrapper, onChangeMock, columns;

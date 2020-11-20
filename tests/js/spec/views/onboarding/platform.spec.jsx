@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {createProject} from 'app/actionCreators/projects';
-import OnboardingPlatform from 'app/views/onboarding/platform';
 import TeamStore from 'app/stores/teamStore';
+import OnboardingPlatform from 'app/views/onboarding/platform';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('app/actionCreators/projects');
 

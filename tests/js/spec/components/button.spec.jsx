@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import Button from 'app/components/button';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('Button', function () {
   const routerContext = TestStubs.routerContext();

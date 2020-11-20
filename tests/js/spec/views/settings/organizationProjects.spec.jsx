@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import OrganizationProjectsContainer from 'app/views/settings/organizationProjects';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('OrganizationProjects', function () {
   let org;

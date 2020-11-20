@@ -1,13 +1,12 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
-
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {browserHistory} from 'react-router';
 
 import GlobalSelectionStore from 'app/stores/globalSelectionStore';
-import GroupDetails from 'app/views/organizationGroupDetails';
-import ProjectsStore from 'app/stores/projectsStore';
 import GroupStore from 'app/stores/groupStore';
+import ProjectsStore from 'app/stores/projectsStore';
+import GroupDetails from 'app/views/organizationGroupDetails';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
 
 jest.unmock('app/utils/recreateRoute');
 

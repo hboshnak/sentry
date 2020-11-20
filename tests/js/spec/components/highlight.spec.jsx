@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {shallow} from 'sentry-test/enzyme';
-
 import {HighlightComponent} from 'app/components/highlight';
+import {shallow} from 'sentry-test/enzyme';
 
 describe('Highlight', function () {
   it('highlights text', function () {

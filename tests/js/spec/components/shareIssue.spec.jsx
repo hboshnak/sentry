@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ShareIssue from 'app/components/shareIssue';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ShareIssue', () => {
   it('renders when not shared', () => {

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import AccountNotifications from 'app/views/settings/account/accountNotifications';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('AccountNotifications', function () {
   const url = '/users/me/notifications/';

@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {ExportQueryType} from 'app/components/dataExport';
 import DataDownload, {DownloadStatus} from 'app/views/dataExport/dataDownload';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('DataDownload', function () {
   beforeEach(MockApiClient.clearMockResponses);

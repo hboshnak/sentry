@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import DiffModal from 'app/components/modals/diffModal';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('DiffModal', function () {
   it('renders', function () {

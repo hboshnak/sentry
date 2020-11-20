@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {ProjectCard} from 'app/views/projectsDashboard/projectCard';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 // NOTE: Unmocking debounce so that the actionCreator never fires
 jest.unmock('lodash/debounce');

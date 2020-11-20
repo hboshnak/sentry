@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import ProjectOwnership from 'app/views/settings/project/projectOwnership';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ProjectTeamsSettings', function () {
   let org;

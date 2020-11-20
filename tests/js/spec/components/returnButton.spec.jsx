@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ReturnButton from 'app/views/settings/components/forms/returnButton';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('returnButton', function () {
   it('renders', function () {

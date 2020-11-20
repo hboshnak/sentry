@@ -1,9 +1,8 @@
 import React from 'react';
 
+import OrganizationActivity from 'app/views/organizationActivity';
 import {mountWithTheme} from 'sentry-test/enzyme';
 import {initializeOrg} from 'sentry-test/initializeOrg';
-
-import OrganizationActivity from 'app/views/organizationActivity';
 
 describe('OrganizationActivity', function () {
   const {router, organization, routerContext} = initializeOrg();

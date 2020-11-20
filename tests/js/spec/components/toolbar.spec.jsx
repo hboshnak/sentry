@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import Toolbar from 'app/components/toolbar';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('Toolbar', function () {
   beforeEach(function () {});

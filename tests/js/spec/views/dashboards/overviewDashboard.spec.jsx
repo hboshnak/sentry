@@ -1,12 +1,11 @@
 import React from 'react';
 
-import {initializeOrg} from 'sentry-test/initializeOrg';
-import {mockRouterPush} from 'sentry-test/mockRouterPush';
-import {mountWithTheme} from 'sentry-test/enzyme';
-
+import ProjectsStore from 'app/stores/projectsStore';
 import DashboardsContainer from 'app/views/dashboards';
 import OverviewDashboard from 'app/views/dashboards/overviewDashboard';
-import ProjectsStore from 'app/stores/projectsStore';
+import {mountWithTheme} from 'sentry-test/enzyme';
+import {initializeOrg} from 'sentry-test/initializeOrg';
+import {mockRouterPush} from 'sentry-test/mockRouterPush';
 
 jest.mock('app/utils/withLatestContext');
 

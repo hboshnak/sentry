@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import IntegrationRow from 'app/views/organizationIntegrations/integrationRow';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('IntegrationRow', function () {
   beforeEach(function () {

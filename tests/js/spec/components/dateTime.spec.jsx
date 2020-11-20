@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import DateTime from 'app/components/dateTime';
 import ConfigStore from 'app/stores/configStore';
+import {mount} from 'sentry-test/enzyme';
 
 describe('DateTime', () => {
   const user = {

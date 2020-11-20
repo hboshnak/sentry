@@ -1,9 +1,8 @@
-import {Modal} from 'react-bootstrap';
 import React from 'react';
-
-import {mountWithTheme} from 'sentry-test/enzyme';
+import {Modal} from 'react-bootstrap';
 
 import {RedirectToProjectModal} from 'app/components/modals/redirectToProject';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.unmock('app/utils/recreateRoute');
 describe('RedirectToProjectModal', function () {

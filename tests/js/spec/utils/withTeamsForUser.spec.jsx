@@ -1,10 +1,9 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
-import TeamActions from 'app/actions/teamActions';
 import ProjectActions from 'app/actions/projectActions';
+import TeamActions from 'app/actions/teamActions';
 import withTeamsForUser from 'app/utils/withTeamsForUser';
+import {mount} from 'sentry-test/enzyme';
 
 describe('withUserTeams HoC', function () {
   const api = new MockApiClient();

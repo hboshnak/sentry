@@ -1,14 +1,13 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {openSudo} from 'app/actionCreators/modal';
 import * as OrganizationActionCreator from 'app/actionCreators/organization';
 import ConfigStore from 'app/stores/configStore';
-import {OrganizationContext} from 'app/views/organizationContext';
+import OrganizationStore from 'app/stores/organizationStore';
 import ProjectsStore from 'app/stores/projectsStore';
 import TeamStore from 'app/stores/teamStore';
-import OrganizationStore from 'app/stores/organizationStore';
+import {OrganizationContext} from 'app/views/organizationContext';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('app/stores/configStore', () => ({
   get: jest.fn(),

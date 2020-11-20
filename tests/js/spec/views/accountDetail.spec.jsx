@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import AccountDetails from 'app/views/settings/account/accountDetails';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('jquery');
 jest.mock('scroll-to-element', () => 'scroll-to-element');

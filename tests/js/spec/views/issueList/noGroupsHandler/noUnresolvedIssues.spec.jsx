@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
-import NoUnresolvedIssues from 'app/views/issueList/noGroupsHandler/noUnresolvedIssues';
 import CongratsRobotsVideo from 'app/views/issueList/noGroupsHandler/congratsRobots';
+import NoUnresolvedIssues from 'app/views/issueList/noGroupsHandler/noUnresolvedIssues';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 // Mocking this because of https://github.com/airbnb/enzyme/issues/2326
 jest.mock('app/views/issueList/noGroupsHandler/congratsRobots', () =>

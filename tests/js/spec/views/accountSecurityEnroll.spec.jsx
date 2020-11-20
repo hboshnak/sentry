@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import AccountSecurityEnroll from 'app/views/settings/account/accountSecurity/accountSecurityEnroll';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const ENDPOINT = '/users/me/authenticators/';
 

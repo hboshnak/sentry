@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ToolbarHeader from 'app/components/toolbarHeader';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ToolbarHeader', function () {
   beforeEach(function () {});

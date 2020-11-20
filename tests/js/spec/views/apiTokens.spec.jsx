@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import {ApiTokens} from 'app/views/settings/account/apiTokens';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 const organization = TestStubs.Organization();
 

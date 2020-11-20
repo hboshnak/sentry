@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import MutedBox from 'app/components/mutedBox';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('MutedBox', function () {
   describe('render()', function () {

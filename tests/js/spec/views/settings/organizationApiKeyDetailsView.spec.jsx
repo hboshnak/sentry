@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-
-import {mount} from 'sentry-test/enzyme';
+import PropTypes from 'prop-types';
 
 import {Client} from 'app/api';
 import OrganizationApiKeyDetails from 'app/views/settings/organizationApiKeys/organizationApiKeyDetails';
+import {mount} from 'sentry-test/enzyme';
 
 jest.mock('jquery');
 

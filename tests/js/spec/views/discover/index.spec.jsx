@@ -1,9 +1,8 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import DiscoverContainerWithStore, {DiscoverContainer} from 'app/views/discover';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('DiscoverContainer', function () {
   beforeEach(function () {

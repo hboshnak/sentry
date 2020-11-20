@@ -1,9 +1,8 @@
 import React from 'react';
 import pick from 'lodash/pick';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import SentryAppExternalInstallation from 'app/views/sentryAppExternalInstallation';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('SentryAppExternalInstallation', () => {
   let sentryApp,

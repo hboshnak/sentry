@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mount} from 'sentry-test/enzyme';
-
 import GlobalSelectionStore from 'app/stores/globalSelectionStore';
 import withGlobalSelection from 'app/utils/withGlobalSelection';
+import {mount} from 'sentry-test/enzyme';
 
 describe('withGlobalSelection HoC', function () {
   beforeEach(() => {

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import ExceptionMechanism from 'app/components/events/interfaces/exceptionMechanism';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('ExceptionMechanism', () => {
   describe('basic attributes', () => {

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import DetailedError from 'app/components/errors/detailedError';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('DetailedError', function () {
   it('renders', function () {

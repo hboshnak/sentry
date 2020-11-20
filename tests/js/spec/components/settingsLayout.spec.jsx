@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import {Client} from 'app/api';
 import SettingsLayout from 'app/views/settings/components/settingsLayout';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('SettingsLayout', function () {
   beforeEach(function () {
